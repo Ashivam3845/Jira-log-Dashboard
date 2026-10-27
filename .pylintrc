@@ -1,0 +1,10 @@
+[MASTER]
+init-hook='import sys; sys.path.extend(["./"])'
+
+disable=E0401, W1203, W0718, C0111, C0114, C0115, C0116
+
+ignore=venv, __pycache__, .*, scripts, tests, frontend
+ignore-patterns=.*\.pyc,.*\.pyo
+
+[BASIC]
+name-rgx=^[a-zA-Z_][a-zA-Z0-9_]*$

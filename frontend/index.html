@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jira Logger | AI-Powered Engineering Tracker</title>
+    <meta name="description" content="Automated activity tracking and AI summarization for engineering teams.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="app" class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside id="sidebar" class="sidebar hidden">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <span class="logo-icon">📊</span>
+                    <span class="logo-text">Jira Logger</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="#/overview" class="nav-item active" data-path="/overview">
+                    <span class="nav-icon">🏠</span> Dashboard
+                </a>
+                <a href="#/github" class="nav-item" data-path="/github">
+                    <span class="nav-icon">🐙</span> GitHub Analytics
+                </a>
+                <a href="#/jira" class="nav-item" data-path="/jira">
+                    <span class="nav-icon">🎫</span> Jira Analytics
+                </a>
+                <a href="#/correlations" class="nav-item" data-path="/correlations">
+                    <span class="nav-icon">🔗</span> Correlations
+                </a>
+                <a href="#/chat" class="nav-item" data-path="/chat">
+                    <span class="nav-icon">💬</span> Activity Chat
+                </a>
+                <a href="#/reports" class="nav-item" data-path="/reports">
+                    <span class="nav-icon">🤖</span> AI Reports
+                </a>
+                <a href="#/settings" class="nav-item" data-path="/settings">
+                    <span class="nav-icon">⚙️</span> Settings
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="avatar" id="user-avatar">AD</div>
+                    <div class="user-info">
+                        <span class="user-name" id="user-name">Admin</span>
+                        <span class="user-role" id="user-role">admin</span>
+                    </div>
+                </div>
+                <button id="logout-btn" class="btn-icon" title="Logout">🚪</button>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main id="main-content" class="main-content">
+            <!-- Topbar -->
+            <header id="topbar" class="topbar hidden">
+                <div class="topbar-left">
+                    <button id="mobile-menu-btn" class="mobile-menu-btn">☰</button>
+                    <h1 id="page-title" class="page-title">Dashboard Overview</h1>
+                </div>
+                <div class="topbar-right">
+                    <button id="sync-btn" class="btn btn-primary btn-sm">
+                        <span class="btn-icon">🔄</span> Sync Data
+                    </button>
+                    <button id="theme-toggle" class="btn-icon" title="Toggle Theme">☀️</button>
+                </div>
+            </header>
+
+            <!-- Dynamic Views Container -->
+            <div id="view-container" class="view-container">
+                <!-- Views will be injected here by app.js -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Scripts -->
+    <script type="module" src="js/app.js"></script>
+</body>
+
+</html>

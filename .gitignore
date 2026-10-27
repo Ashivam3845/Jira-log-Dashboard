@@ -1,0 +1,38 @@
+# OS / Temp files
+.DS_Store
+*.swp
+*.tmp
+*.bak
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+.env.*
+!.env.example
+.env
+
+# DB
+*.db
+jira_logger.db
+
+# Logs
+logs/
+*.log
+
+# Local Jira/GitHub data and generated reports (never commit work data)
+exports/
+jira_worklog_report.csv
+jira_worklogs.xlsx
+jira_github_worklogs.xlsx
+export_jira_github.py
+generate_jira_report.py
+get_myself_test.py
+to do.txt
+apps/properties.py
+
+# Coverage
+.coverage
+.scannerwork/
+!sonar-project.properties

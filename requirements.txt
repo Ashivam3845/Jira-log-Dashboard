@@ -1,0 +1,62 @@
+###############################################################
+# 🌐 WEB FRAMEWORK & API DEVELOPMENT
+###############################################################
+
+fastapi==0.121.2              # Lightweight web framework
+uvicorn==0.38.0               # ASGI server
+APScheduler==3.11.1           # Advanced scheduling and background job management
+
+###############################################################
+# 🔒 SECURITY, VALIDATION & AUTH
+###############################################################
+
+pydantic==2.12.4              # Data validation and settings management
+pydantic-settings==2.12.0     # Configuration management for Pydantic models
+python-jose[cryptography]==3.3.0  # JWT token handling
+passlib[bcrypt]==1.7.4        # Password hashing
+python-multipart==0.0.20      # Form data / file upload parsing
+
+###############################################################
+# 📦 DATA & NUMERICAL
+###############################################################
+
+numpy==1.26.2                 # Numerical computing
+pandas==2.1.4                 # Data manipulation and analysis
+
+###############################################################
+# ☁️ CLOUD & EXTERNAL SERVICE INTEGRATIONS
+###############################################################
+
+boto3==1.40.72                # AWS SDK for Python (Secrets Manager)
+requests==2.32.5              # HTTP client for GitHub/Jira APIs
+redis==5.2.1                  # Redis client for user settings and sessions
+elastic-apm[logging]          # Elastic APM logging integration
+elastic-apm                   # Elastic APM client
+
+###############################################################
+# 🧠 AI & OPENAI INTEGRATION
+###############################################################
+
+openai==1.82.0                # OpenAI API client
+
+###############################################################
+# 🗄️ DATABASE
+###############################################################
+
+sqlalchemy==2.0.36            # SQL toolkit and ORM
+
+###############################################################
+# 📄 EXPORT & REPORTING
+###############################################################
+
+jinja2==3.1.4                 # Template rendering
+
+###############################################################
+# 🔧 UTILITIES
+###############################################################
+
+pytz==2024.2                  # Timezone handling
+
+###############################################################
+# ✅ END OF REQUIREMENTS
+###############################################################
